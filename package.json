@@ -9,11 +9,16 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon --exec babel-node src/app.js",
     "build": "NODE_ENV=production babel src --out-dir dist",
-    "serve": "node dist/app.js"
+    "serve": "node dist/app.js",
+    "test": "NODE_ENV=test mocha --require @babel/register"
   },
   "dependencies": {
+    "@babel/register": "^7.6.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "custom-env": "^1.0.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mocha": "^6.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
