@@ -1,0 +1,25 @@
+{
+  "name": "playlist",
+  "version": "1.0.0",
+  "description": "playlist app",
+  "main": "app.js",
+  "repository": "https://github.com/xaositectt/playlist_node",
+  "author": "xaositect",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon --exec babel-node src/app.js",
+    "build": "NODE_ENV=production babel src --out-dir dist",
+    "serve": "node dist/app.js"
+  },
+  "dependencies": {
+    "custom-env": "^1.0.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "nodemon": "^1.19.2"
+  }
+}
