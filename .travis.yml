@@ -1,6 +1,9 @@
 language: node_js
 node_js:
- - "node"
+ - "stable"
 env:
 - NODE_ENV=test
 - YARN_GPG=no
+cache:
+  directories:
+    - "node_modules"
