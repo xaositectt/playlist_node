@@ -7,7 +7,7 @@ chai.use(chaiHttp)
 describe('test endpoint', function(){
   it('should return hello world', done=>{
     chai.request(server)
-      .get('/hello_worl')
+      .get('/hello_world')
       .end((err,res)=>{
         assert(res.status, 200)
         assert(res.body.msg, 'hello world')
